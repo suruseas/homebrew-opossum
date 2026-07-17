@@ -5,15 +5,15 @@
 class Opossum < Formula
   desc "A Docker Compose-like orchestrator for Apple's container runtime"
   homepage "https://github.com/suruseas/opossum"
-  version "0.9.0"
+  version "0.10.0"
   license "MIT"
 
   depends_on "container"
   depends_on :macos
 
   if Hardware::CPU.arm?
-    url "https://github.com/suruseas/opossum/releases/download/v0.9.0/opossum_0.9.0_darwin_arm64.tar.gz"
-    sha256 "a6e7cb7a53d7ecd87c9314db9dd910d9e77153551aec5b5a500b2ab27c4ca3b0"
+    url "https://github.com/suruseas/opossum/releases/download/v0.10.0/opossum_0.10.0_darwin_arm64.tar.gz"
+    sha256 "cdd6a14ab7118d495a8e424a23809334f175ad2bec64a8e8c307473debc6ff3d"
 
     define_method(:install) do
       bin.install "opossum"
