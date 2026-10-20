@@ -6,11 +6,11 @@ cask "opossum" do
     end
   end
 
-  version "0.48.0"
+  version "0.48.1"
 
   on_macos do
     on_arm do
-      sha256 "22b10b1a10fb06232aee2512e9f502202f1fa4b913580d6a7c8692b675d5393f"
+      sha256 "732f0afca5f4878a58114161c05515a5fedddbb5219bafdad5dc826cc0e11352"
       url "https://github.com/suruseas/opossum/releases/download/v#{version}/opossum_#{version}_darwin_arm64.tar.gz"
     end
   end
