@@ -6,13 +6,12 @@ cask "opossum" do
     end
   end
 
-  version "0.49.0"
+  version "1.0.0"
 
   on_macos do
-    on_arm do
-      sha256 "7320b176ab1de9144543c548223c31de92f9e20011c0b98087f4508cd9ffb63d"
-      url "https://github.com/suruseas/opossum/releases/download/v#{version}/opossum_#{version}_darwin_arm64.tar.gz"
-    end
+    depends_on arch: :arm64
+    sha256 "23f3094118527718921cfc6591ddb2b15063ebb882742cf5ee9227938f3b23d5"
+    url "https://github.com/suruseas/opossum/releases/download/v#{version}/opossum_#{version}_darwin_arm64.tar.gz"
   end
 
   name "opossum"
@@ -22,6 +21,7 @@ cask "opossum" do
   livecheck do
     skip "Auto-generated on release."
   end
+  depends_on :macos
   depends_on formula: [
       "container",
     ]
